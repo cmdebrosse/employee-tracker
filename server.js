@@ -47,33 +47,42 @@ function questList() {
       switch (selection) {
         case "View all departments":
           viewDepts();
+          break;
 
         case "View all jobs":
           viewJobs();
+          break;
 
         case "View all employees":
           viewEmps();
+          break;
 
-        case "Add a department":
-          addNewDept();
+        // case "Add a department":
+        //   addNewDept();
+        //  break;
 
         case "Add an employee":
           addNewEmp();
 
-        case "Add a job":
-          addNewJob();
+        // case "Add a job":
+        //   addNewJob();
+        //  break;
 
-        case "Update an employee":
-          updateEmp();
+        // case "Update an employee":
+        //   updateEmp();
+        //  break;
 
-        case "Delete an employee":
-          deleteDept();
+        // case "Delete an employee":
+        //   deleteDept();
+        //  break;
 
-        case "Delete an employee":
-          deleteJob();
+        // case "Delete an employee":
+        //   deleteJob();
+        //  break;
 
-        case "Delete an employee":
-          deleteEmp();
+        // case "Delete an employee":
+        //   deleteEmp();
+        //  break;
 
         case "Quit":
           quit();
@@ -118,7 +127,7 @@ function viewEmps() {
 }
 
 // Create a department
-function addNewDept() {}
+// function addNewDept() {}
 
 // Create an employee
 function addNewEmp() {
@@ -144,28 +153,28 @@ function addNewEmp() {
 }
 
 // Create a job
-function addNewJob() {}
+// function addNewJob() {}
 
 // Update an employee
-function updateEmp() {}
+// function updateEmp() {}
 
 // Delete a department
-function deleteDept() {}
+// function deleteDept() {}
 
 // Delete an employee
-function deleteEmp() {
-  db.query(`DELETE FROM employee WHERE emp_id = ?`, (err, emps) => {
-    if (err) {
-      console.log(err);
-    }
-    printTable(emps);
+// function deleteEmp() {
+//   db.query(`DELETE FROM employee WHERE emp_id = ?`, (err, emps) => {
+//     if (err) {
+//       console.log(err);
+//     }
+//     printTable(emps);
 
-    questList();
-  });
-}
+//     questList();
+//   });
+// }
 
 // Delete a job
-function deleteJob() {}
+// function deleteJob() {}
 
 function quit() {
   db.end();
